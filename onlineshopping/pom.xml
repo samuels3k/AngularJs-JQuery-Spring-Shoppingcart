@@ -15,6 +15,12 @@
 
 		<!-- JAVA EE API -->
 
+		<!-- Link Back end Project -->
+		<dependency>
+			<groupId>com.samuel.spring</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
@@ -28,9 +34,9 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${springwebmvc.version}</version>
 		</dependency>
-		
+
 		<!-- jstl -->
-<dependency>
+		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
