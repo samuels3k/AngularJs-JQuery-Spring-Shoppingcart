@@ -48,7 +48,7 @@
 
 		<!-- Page Content -->
 		<div class="content">
-		
+
 			<c:if test="${userClickHome==true}">
 
 				<%@include file="./home.jsp"%>
@@ -67,15 +67,22 @@
 			</c:if>
 
 
+			<!-- Load when user clicks Category Products-->
+			<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true}">
+
+				<%@include file="./listProducts.jsp"%>
+			</c:if>
+
+
 		</div>
 		<!-- /.container -->
 
 		<!-- <div class="container"> -->
 
-			<hr>
+		<hr>
 
-			<!-- Footer -->
-			<%@include file="./shared/footer.jsp"%>
+		<!-- Footer -->
+		<%@include file="./shared/footer.jsp"%>
 		<!-- </div> -->
 		<!-- /.container -->
 
